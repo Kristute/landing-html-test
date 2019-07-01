@@ -1,0 +1,26 @@
+.stickyHeader {
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $headerHeight;
+    background: #fff;
+    -webkit-box-shadow: 0px -3px 40px 0px rgba(0,0,0,.21);
+    box-shadow: 0px -3px 40px 0px rgba(0,0,0,.21);
+
+    &__logo {
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: left;
+        line-height: 32px;
+        padding: 21.5px 137px;
+    }
+}

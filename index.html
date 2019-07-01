@@ -3,131 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{projectName}}</title>
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" value="Webpack basic starter project">
-    <meta name="Description" content="A simple webpack starter project for your basic web development needs."/>
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Webpack basic starter project" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/" />
-    <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
-    <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
-    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="{{mobileHeaderColor}}">
-    <!-- Mobile header color Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="{{mobileHeaderColor}}">
-    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <title>NTPROJECT</title>
 </head>
 <body>
-<!-- DEMO Project page content STARTS -->
-<div class="video-background">
-    <div class="video-foreground">
-        <iframe
-            src="https://www.youtube.com/embed/iIEIjo4dvSs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=iIEIjo4dvSs"
-            frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-<div class="splash">
-    <div class="splash__content">
-        <div class="splash-title">
-            <a href="https://github.com/lifenautjoe/webpack-starter-basic" target="_blank"><img class="splash-title__img"
-                                                                   src="<%= require('./src/assets/logo-on-dark-bg.png') %>"
-                                                                   alt="webpack logo"></a>
-        </div>
-        <div class="splash-overview">
-            <h1 class="splash-overview__heading">I'm a simple webpack 4 starter project for your basic web development needs.
-            </h1>
-            <div class="splash-overview__star">
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/lifenautjoe/webpack-starter-basic" data-show-count="true"
-                   aria-label="Star lifenautjoe/webpack-starter-basic on GitHub">Star</a>
-            </div>
-            <div class="splash-overview__conclusion">
-                <strong> No <a href="https://pragprog.com/the-pragmatic-programmer/extracts/wizards">wizard code</a>,
-                    understandable, scalable.</strong>
-            </div>
-            <div class="splash-overview__details">
-                A <strong>minimal</strong> yet <strong>rich</strong> set of features to get you going.
-                <div class="splash-overview-plugins">
-                    <button id="plugins-trigger" class="splash-overview-plugins__trigger">
-                        Show features
-                    </button>
-                    <ul id="plugins" class="splash-overview-plugins__list">
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/babel/babel-loader">Use the latest JavaScript</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/sass-loader">Write styles in Sass</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/url-loader">Load and bundle your assets</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank"
-                               href="https://github.com/webpack/webpack-dev-server">Start a development server and preview your work</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/postcss/autoprefixer">Automatic css vendor prefixes</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/uglifyjs-webpack-plugin">Optimizes scripts for production</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/NMFR/optimize-css-assets-webpack-plugin">Optimizes styles for production</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/jantimon/favicons-webpack-plugin">Generates favicons</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">Adds mobile headers color</a>
-                        </li>
-                    </ul>
+    <header class="stickyHeader">
+        <span class="stickyHeader__logo">NTPROJECT</span>
+        <nav class="navigation">
+                <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="#blog">Pradžia</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#offers">Pasiūlymai</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#news">Naujienos</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#contacts">Kontaktai</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="blog" id="blog">
+        <div class="blog__bg"></div>
+        <h1 class="blog__title">
+            Lorem ipsum dolor sit amet conset
+        </h1>
+        <div class="blog__container">
+          <div class="blog__fader"></div>
+          <div class="blog__arrow blog__arrow--left"></div>
+          <div class="blog__arrow blog__arrow--right"></div>
+            
+            <div class="blog__list">
+              <div class="post">
+                <img class="post__image" src="<%= require('./src/assets/images/matthew-hamilton-166549-unsplash.png') %>">
+                <div class="post__content">
+                  <span class="post__title">Lorem ipsum dolor sit amet</span>
+                  <p class="post__description">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>  
+                  <a class="post__moreDetails">
+                    <svg color="#30333" xmlns="http://www.w3.org/2000/svg" width="34.242" height="23.564" viewBox="0 0 34.242 23.564"><g transform="translate(-28 159.084)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252l7.472,7.472H1.592a1.592,1.592,0,1,0,0,3.184H28.806l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(28 -201)"/></g></svg>
+                  </a>
                 </div>
-            </div>
-            <div class="splash-overview-start">
-                <div class="splash-overview-start__command">
-                    git clone https://github.com/lifenautjoe/webpack-starter-basic PROJECT-NAME
+              </div>
+              <div class="post">
+                <img class="post__image" src="<%= require('./src/assets/images/matthew-hamilton-166549-unsplash.png') %>">
+                <div class="post__content">
+                  <span class="post__title">Lorem ipsum dolor sit amet</span>
+                  <p class="post__description">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>  
+                  <a class="post__moreDetails">
+                    <svg color="#30333" xmlns="http://www.w3.org/2000/svg" width="34.242" height="23.564" viewBox="0 0 34.242 23.564"><g transform="translate(-28 159.084)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252l7.472,7.472H1.592a1.592,1.592,0,1,0,0,3.184H28.806l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(28 -201)"/></g></svg>
+                  </a>
                 </div>
-                <div class="splash-overview-start__command">
-                    cd PROJECT-NAME
+              </div>
+              <div class="post">
+                <img class="post__image" src="<%= require('./src/assets/images/matthew-hamilton-166549-unsplash.png') %>">
+                <div class="post__content">
+                  <span class="post__title">Lorem ipsum dolor sit amet</span>
+                  <p class="post__description">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>  
+                  <a class="post__moreDetails">
+                    <svg color="#30333" xmlns="http://www.w3.org/2000/svg" width="34.242" height="23.564" viewBox="0 0 34.242 23.564"><g transform="translate(-28 159.084)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252l7.472,7.472H1.592a1.592,1.592,0,1,0,0,3.184H28.806l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(28 -201)"/></g></svg>
+                  </a>
                 </div>
-                <div class="splash-overview-start__command">
-                    npm install <span class="splash-overview-start__comment"># Install dependencies </span>
+              </div>
+              <div class="post">
+                <img class="post__image" src="<%= require('./src/assets/images/matthew-hamilton-166549-unsplash.png') %>">
+                <div class="post__content">
+                  <span class="post__title">Lorem ipsum dolor sit amet</span>
+                  <p class="post__description">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>  
+                  <a class="post__moreDetails">
+                    <svg color="#30333" xmlns="http://www.w3.org/2000/svg" width="34.242" height="23.564" viewBox="0 0 34.242 23.564"><g transform="translate(-28 159.084)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252l7.472,7.472H1.592a1.592,1.592,0,1,0,0,3.184H28.806l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(28 -201)"/></g></svg>
+                  </a>
                 </div>
-                <div class="splash-overview-start__command">
-                    npm run kickstart <span class="splash-overview-start__comment"># Configure your project</span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run start <span class="splash-overview-start__comment"># Start the development server</span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run build <span class="splash-overview-start__comment"># Build for production</span>
-                </div>
-            </div>
-            <div class="splash-overview-issues">
-                <div>Have an issue or are in need of guidance?</div>
-                <strong>Open an issue <a
-                    href="https://github.com/lifenautjoe/webpack3-starter/issues">here</a>. </strong>
-            </div>
-            <div class="splash-overview-footer">
-                A project by <strong><a target="_blank" href="https://www.instagram.com/lifenautjoe">@lifenautjoe</a></strong>.
-            </div>
-        </div>
-    </div>
-</div>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+              </div>
+          </div>
+    </section>
+    <section class="realEstate" id="offers">
+      <table class="appartments">
+        <thead>
+          <tr>
+            <td colspan="6">
+              <div class="appartments__filters">
+                <button class="button">Plotas
+                    <svg class="button__arrowDown" xmlns="http://www.w3.org/2000/svg" width="23.564" height="13.374" viewBox="0 0 23.564 13.374"><g transform="translate(-135.52 -68.868) rotate(90)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252s7.4,7.44,7.472,7.472c0,0,1.006.778,1.006,1.574s-1.006,1.61-1.006,1.61l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(48 -201)"/></g></svg>
 
-    gtag('config', 'UA-101423651-2');
-</script>
-<!-- DEMO Project page content ENDS -->
+                </button>
+                <button class="button">Kambarių skaičius
+                    <svg class="button__arrowDown" xmlns="http://www.w3.org/2000/svg" width="23.564" height="13.374" viewBox="0 0 23.564 13.374"><g transform="translate(-135.52 -68.868) rotate(90)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252s7.4,7.44,7.472,7.472c0,0,1.006.778,1.006,1.574s-1.006,1.61-1.006,1.61l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(48 -201)"/></g></svg>
+                </button>
+                <button class="button">Langų orientacija
+                    <svg class="button__arrowDown" xmlns="http://www.w3.org/2000/svg" width="23.564" height="13.374" viewBox="0 0 23.564 13.374"><g transform="translate(-135.52 -68.868) rotate(90)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252s7.4,7.44,7.472,7.472c0,0,1.006.778,1.006,1.574s-1.006,1.61-1.006,1.61l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(48 -201)"/></g></svg>
+                </button>       
+                <button class="button">Baigtumas
+                    <svg class="button__arrowDown" xmlns="http://www.w3.org/2000/svg" width="23.564" height="13.374" viewBox="0 0 23.564 13.374"><g transform="translate(-135.52 -68.868) rotate(90)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252s7.4,7.44,7.472,7.472c0,0,1.006.778,1.006,1.574s-1.006,1.61-1.006,1.61l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(48 -201)"/></g></svg>
+                </button>                   
+              </div>
+            </td>
+          </tr>
+          <tr class="appartments__headRow">
+            <th class="appartments__headColumn">Nuolaida</th>
+            <th class="appartments__headColumn">Namo nr.</th>
+            <th class="appartments__headColumn">Plotas m2</th>
+            <th class="appartments__headColumn">Kambarių skaičius</th>
+            <th class="appartments__headColumn">Langų orientacija</th>
+            <th class="appartments__headColumn">Baigtumas</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr class="appartments__bodyRow">
+          <td class="appartments__bodyColumn">-5%</td>
+          <td class="appartments__bodyColumn">1</td>
+          <td class="appartments__bodyColumn">50.17</td>
+          <td class="appartments__bodyColumn">3</td>
+          <td class="appartments__bodyColumn">Pietūs</td>
+          <td class="appartments__bodyColumn">Pastatyta</td>
+        </tr>
+        <tr class="appartments__bodyRow">
+            <td class="appartments__bodyColumn">-5%</td>
+            <td class="appartments__bodyColumn">1</td>
+            <td class="appartments__bodyColumn">50.17</td>
+            <td class="appartments__bodyColumn">3</td>
+            <td class="appartments__bodyColumn">Pietūs</td>
+            <td class="appartments__bodyColumn">Pastatyta</td>
+        </tr>
+        <tr class="appartments__bodyRow">
+            <td class="appartments__bodyColumn">-5%</td>
+            <td class="appartments__bodyColumn">1</td>
+            <td class="appartments__bodyColumn">50.17</td>
+            <td class="appartments__bodyColumn">3</td>
+            <td class="appartments__bodyColumn">Pietūs</td>
+            <td class="appartments__bodyColumn">Pastatyta</td>
+        </tr>
+        <tr class="appartments__bodyRow">
+            <td class="appartments__bodyColumn">-5%</td>
+            <td class="appartments__bodyColumn">1</td>
+            <td class="appartments__bodyColumn">50.17</td>
+            <td class="appartments__bodyColumn">3</td>
+            <td class="appartments__bodyColumn">Pietūs</td>
+            <td class="appartments__bodyColumn">Pastatyta</td>
+        </tr>
+        <tr class="appartments__bodyRow">
+            <td class="appartments__bodyColumn">-5%</td>
+            <td class="appartments__bodyColumn">1</td>
+            <td class="appartments__bodyColumn">50.17</td>
+            <td class="appartments__bodyColumn">3</td>
+            <td class="appartments__bodyColumn">Pietūs</td>
+            <td class="appartments__bodyColumn">Pastatyta</td>
+        </tr>
+        <tr class="appartments__bodyRow">
+            <td class="appartments__bodyColumn">-5%</td>
+            <td class="appartments__bodyColumn">1</td>
+            <td class="appartments__bodyColumn">50.17</td>
+            <td class="appartments__bodyColumn">3</td>
+            <td class="appartments__bodyColumn">Pietūs</td>
+            <td class="appartments__bodyColumn">Pastatyta</td>
+        </tr>
+        <tr class="appartments__bodyRow">
+            <td class="appartments__bodyColumn">-5%</td>
+            <td class="appartments__bodyColumn">1</td>
+            <td class="appartments__bodyColumn">50.17</td>
+            <td class="appartments__bodyColumn">3</td>
+            <td class="appartments__bodyColumn">Pietūs</td>
+            <td class="appartments__bodyColumn">Pastatyta</td>
+          </tr>
+          <tr class="appartments__bodyRow">
+              <td class="appartments__bodyColumn">-5%</td>
+              <td class="appartments__bodyColumn">1</td>
+              <td class="appartments__bodyColumn">50.17</td>
+              <td class="appartments__bodyColumn">3</td>
+              <td class="appartments__bodyColumn">Pietūs</td>
+              <td class="appartments__bodyColumn">Pastatyta</td>
+          </tr>
+          <tr class="appartments__bodyRow">
+              <td class="appartments__bodyColumn">-5%</td>
+              <td class="appartments__bodyColumn">1</td>
+              <td class="appartments__bodyColumn">50.17</td>
+              <td class="appartments__bodyColumn">3</td>
+              <td class="appartments__bodyColumn">Pietūs</td>
+              <td class="appartments__bodyColumn">Pastatyta</td>
+          </tr>
+          <tr class="appartments__bodyRow">
+              <td class="appartments__bodyColumn">-5%</td>
+              <td class="appartments__bodyColumn">1</td>
+              <td class="appartments__bodyColumn">50.17</td>
+              <td class="appartments__bodyColumn">3</td>
+              <td class="appartments__bodyColumn">Pietūs</td>
+              <td class="appartments__bodyColumn">Pastatyta</td>
+          </tr>
+          <tr class="appartments__bodyRow">
+              <td class="appartments__bodyColumn">-5%</td>
+              <td class="appartments__bodyColumn">1</td>
+              <td class="appartments__bodyColumn">50.17</td>
+              <td class="appartments__bodyColumn">3</td>
+              <td class="appartments__bodyColumn">Pietūs</td>
+              <td class="appartments__bodyColumn">Pastatyta</td>
+            </tr>
+            <tr class="appartments__bodyRow">
+                <td class="appartments__bodyColumn">-5%</td>
+                <td class="appartments__bodyColumn">1</td>
+                <td class="appartments__bodyColumn">50.17</td>
+                <td class="appartments__bodyColumn">3</td>
+                <td class="appartments__bodyColumn">Pietūs</td>
+                <td class="appartments__bodyColumn">Pastatyta</td>
+            </tr>
+      </tbody>
+      </table>
+    </section>
+    <section class="news" id="news">
+      <h2 class="news__title">Naujienos</h2>
+      <div class="news__cardList">
+        <div class="news__card">
+            <img class="news__image news__image--one" src="<%= require('./src/assets/images/chris-barbalis-696423-unsplash.png') %>">
+            <div class="news__imageLabel"><span class="news__imageText">Lorem ipsum dolor sit amet</span></div>
+          </div>
+        <div class="news__card">
+            <img class="news__image news__image--two" src="<%= require('./src/assets/images/caleb-jones-135058-unsplash.png') %>">
+            <div class="news__imageLabel"><span class="news__imageText">Lorem ipsum dolor sit amet</span></div>
+        </div>
+        <div class="news__card">
+            <img class="news__image news__image--three" src="<%= require('./src/assets/images/jason-briscoe-332508-unsplash.png') %>">
+            <div class="news__imageLabel"><span class="news__imageText">Lorem ipsum dolor sit amet</span></div>
+        </div>
+        <div class="news__card">
+            <img class="news__image news__image--four" src="<%= require('./src/assets/images/daniil-silantev-574966-unsplash.png') %>">
+            <div class="news__imageLabel"><span class="news__imageText">Lorem ipsum dolor sit amet</span></div>
+        </div>
+        <div class="news__card">
+            <img class="news__image news__image--five" src="<%= require('./src/assets/images/roberto-nickson-661462-unsplash.png') %>">
+            <div class="news__imageLabel"><span class="news__imageText">Lorem ipsum dolor sit amet</span></div>
+        </div>
+        <div class="news__card">
+            <img class="news__image news__image--six" src="<%= require('./src/assets/images/matthew-hamilton-166549-unsplash.png') %>">
+            <div class="news__imageLabel"><span class="news__imageText">Lorem ipsum dolor sit amet</span></div>
+        </div>
+      </div>
+      <div class="news__footer">
+      <button class="button button--darkGrey">Daugiau naujienų 
+          <svg class="button__arrowRight" xmlns="http://www.w3.org/2000/svg" width="34.242" height="23.564" viewBox="0 0 34.242 23.564"><g transform="translate(-28 159.084)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252l7.472,7.472H1.592a1.592,1.592,0,1,0,0,3.184H28.806l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(28 -201)"/></g></svg>
+      </button>
+      </div>
+    </section>
+
+    <section class="about" id="contacts">
+
+      <div class="about__contacts">
+        <div class="about__person">
+          <div class="about__personImageWrapper">
+              <img class="about__personImage about__personImageWrapper--agne" src="<%= require('./src/assets/images/stefan-stefancik-1203044-unsplash (1).png') %>">          
+          </div> 
+          <div class="about__info">
+            <span class="about__name">Agnė Valentinaitė</span>
+            <span class="about__email">agne@ntprojects.com</span>
+            <span class="about__phone">+370 62553454</span>
+          </div>
+        </div>
+
+        <div class="about__person">
+            <div class="about__personImageWrapper">
+                <img class="about__personImage about__personImageWrapper--kamile" src="<%= require('./src/assets/images/dan-1147269-unsplash.png') %>">          
+            </div> 
+            <div class="about__info">
+              <span class="about__name">Kamilė Henderson</span>
+              <span class="about__email">kamile@ntprojects.com</span>
+              <span class="about__phone">+370 64567893</span>
+            </div>
+        </div>
+
+        <div class="about__person">
+            <div class="about__personImageWrapper">
+                <img class="about__personImage about__personImageWrapper--tomas" src="<%= require('./src/assets/images/natashia-shukla-1411995-unsplash.png') %>">          
+            </div> 
+            <div class="about__info">
+              <span class="about__name">Tomas Petkevičius</span>
+              <span class="about__email">tomas@ntprojects.com</span>
+              <span class="about__phone">+370 60567843</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="about__form">
+        <h2 class="about__title">Sužinok apie projektą daugiau</h2>
+        <form class="about__formInfo">
+            <label class="about__formLabel">
+                <input class="about__formInput" placeholder="Jūsų vardas" required>
+            </label>
+            <label class="about__formLabel">
+                <input class="about__formInput" placeholder="El. paštas" required>
+            </label>
+            <label class="about__formLabel">
+                <input class="about__formInput" placeholder="Telefono numeris" required>
+            </label>
+            <label class="about__formLabel">
+                <input class="about__formInput" placeholder="Žinutė" required>
+            </label>
+            <div class="about__formCheckboxField">
+                <input class="about__checkbox" type="checkbox" />
+                <span class="about__checkboxText">Lorem ipsum, dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore minim <u>ntprojects@info.com</u></span>
+            </div>
+
+            <button class="button button--grey">Siųsti 
+                <svg class="button__arrowRight" xmlns="http://www.w3.org/2000/svg" width="34.242" height="23.564" viewBox="0 0 34.242 23.564"><g transform="translate(-28 159.084)"><path d="M33.776,52.572l-10.19-10.19a1.592,1.592,0,1,0-2.252,2.252l7.472,7.472H1.592a1.592,1.592,0,1,0,0,3.184H28.806l-7.472,7.472a1.592,1.592,0,0,0,2.252,2.252l10.19-10.19A1.592,1.592,0,0,0,33.776,52.572Z" transform="translate(28 -201)"/></g></svg>
+            </button>
+
+        </form>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <div class="footer__column">
+        <span class="footer__columnTitle">Apie statytoją</span>
+        <span class="footer__columnLink">Lorem ipsum</span>
+        <span class="footer__columnLink">Dolor sit amet</span>
+      </div>
+      <div class="footer__column">
+          <span class="footer__columnTitle">Saugumas</span>
+          <span class="footer__columnLink">Consectetur adipiscing</span>
+          <span class="footer__columnLink">Sed do eiusmod</span>
+      </div>
+      <span class="footer__icons">
+          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="22" viewBox="0 0 10 22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M6.65,22V11H9.608L10,7.208H6.65l.005-1.9c0-.989.092-1.519,1.475-1.519H9.979V0H7.02c-3.554,0-4.8,1.839-4.8,4.932V7.208H0V11H2.215V22Z"/></svg>
+          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M11,0C8.014,0,7.639.013,6.465.066A8.072,8.072,0,0,0,3.8.577,5.386,5.386,0,0,0,1.847,1.846,5.4,5.4,0,0,0,.577,3.794a8.035,8.035,0,0,0-.511,2.67C.014,7.637,0,8.013,0,11s.013,3.361.066,4.535A8.084,8.084,0,0,0,.578,18.2a5.39,5.39,0,0,0,1.269,1.949,5.386,5.386,0,0,0,1.948,1.27,8.079,8.079,0,0,0,2.67.511C7.638,21.987,8.012,22,11,22s3.361-.013,4.535-.066a8.084,8.084,0,0,0,2.671-.511A5.636,5.636,0,0,0,21.422,18.2a8.153,8.153,0,0,0,.511-2.67C21.986,14.361,22,13.987,22,11s-.014-3.362-.066-4.536a8.15,8.15,0,0,0-.511-2.67,5.4,5.4,0,0,0-1.27-1.949A5.376,5.376,0,0,0,18.2.577,8.1,8.1,0,0,0,15.533.066C14.36.013,13.986,0,11,0Zm-.987,1.982H11c2.937,0,3.285.011,4.445.063a6.09,6.09,0,0,1,2.042.379,3.4,3.4,0,0,1,1.264.823,3.414,3.414,0,0,1,.823,1.265,6.078,6.078,0,0,1,.379,2.042c.053,1.16.064,1.508.064,4.444s-.011,3.284-.064,4.444a6.084,6.084,0,0,1-.379,2.042,3.648,3.648,0,0,1-2.087,2.086,6.068,6.068,0,0,1-2.042.379c-1.16.053-1.508.064-4.445.064S7.716,20,6.556,19.948a6.1,6.1,0,0,1-2.043-.379,3.407,3.407,0,0,1-1.265-.823,3.409,3.409,0,0,1-.823-1.264,6.078,6.078,0,0,1-.379-2.042c-.053-1.16-.063-1.508-.063-4.445s.011-3.284.063-4.444a6.09,6.09,0,0,1,.379-2.042,3.408,3.408,0,0,1,.823-1.265,3.414,3.414,0,0,1,1.265-.823,6.077,6.077,0,0,1,2.043-.379C7.571,2,7.964,1.982,10.014,1.98Zm6.859,1.826a1.32,1.32,0,1,0,1.32,1.32,1.32,1.32,0,0,0-1.32-1.32ZM11,5.351A5.648,5.648,0,1,0,16.649,11,5.649,5.649,0,0,0,11,5.351Zm0,1.982A3.667,3.667,0,1,1,7.334,11,3.667,3.667,0,0,1,11,7.333Z"/></svg>
+      </span>
+    </footer>
 </body>
 </html>

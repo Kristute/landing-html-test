@@ -1,0 +1,32 @@
+.button {
+        background: #A7C0E8;
+        color: #fff;
+        border: 1px;
+        border-radius: 30px;
+        border-color: #A7C0E8;
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 18px 33px 17px 33px;
+
+        &__arrowRight {
+            fill: #FFF;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+
+        &__arrowDown {
+            fill: #FFF;
+            margin-left: 32px;
+        }
+
+        &--darkGrey {
+            background:#30333C;
+        }
+
+        &--grey {
+              background: #D9DBE2;
+              padding: 18px 46px 17px;
+        }
+      }
